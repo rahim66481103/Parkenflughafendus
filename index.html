@@ -1,0 +1,672 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>
+		Parkenflughafendus
+	</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="CSS/Radiocard.css">
+</head>
+	<link rel = "stylesheet" type = "text/css" href = "bootstrap.min.css" />
+	 <style>
+		/* Make the image fully responsive */
+		.carousel-inner img {
+		  width: 100%;
+		  height: 100%;
+		}
+	</style>
+
+	<body>
+		
+		<!--Header-->
+		<section>
+			<div class="container-fluid">
+			  <div class="row">
+				<div class="col col-lg-4 col-md-4 col-sm"><img src="assets/Logo.png"></div>
+				<div class="col col-lg-6 col-md-6 col-sm"><img src="assets/Company Name.png"></div>
+			</div>
+			</div>	
+		</section>
+		<!--Header End-->
+		
+		<!--Navigation Bar-->
+		<section>
+				<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+		  <!-- Links -->
+		  <ul class="navbar-nav">
+			<li class="nav-item">
+			  <a class="nav-link" href="Index.html">Booking</a>
+			</li>
+			
+			<li class="nav-item">
+			  <a class="nav-link" href="Prices.html">Prices</a>
+			</li>
+			
+			<!-- Dropdown -->
+			<li class="nav-item dropdown">
+			  <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+				Condition
+			  </a>
+			  <div class="dropdown-menu">
+				<a class="dropdown-item" href="#">Download</a>
+			  </div>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="Contact us.html">Contact/Direction</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="FAQS.html">FAQ</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="ImprintEn.html">Imprint</a>
+			</li>
+			
+		  </ul>
+		</nav>
+		  		
+		</section>
+		<!--Navigation Bar End-->
+
+		<!--Carisol Images-->
+		<section>
+
+			<div id="demo" class="carousel slide" data-ride="carousel">
+
+					<!-- Indicators -->
+				  <ul class="carousel-indicators">
+					<li data-target="#demo" data-slide-to="0" class="active"></li>
+					<li data-target="#demo" data-slide-to="1"></li>
+					<li data-target="#demo" data-slide-to="2"></li>
+				  </ul>
+				  
+				  <!-- The slideshow -->
+				  <div class="carousel-inner">
+					<div class="carousel-item active">
+					  <img src="Images/1.jpg" width="1100" height="500">
+					</div>
+					<div class="carousel-item">
+					  <img src="Images/2.jpg" width="1100" height="500">
+					</div>
+					<div class="carousel-item">
+					  <img src="Images/3.jpg"  width="1100" height="500">
+					</div>
+				  </div>
+				  
+				  <!-- Left and right controls -->
+				  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+					<span class="carousel-control-prev-icon"></span>
+				  </a>
+				  <a class="carousel-control-next" href="#demo" data-slide="next">
+					<span class="carousel-control-next-icon"></span>
+				  </a>
+			</div>
+		</section>
+		
+		<!--Carisol Images End-->
+		
+		<!--HotLine-->
+		<section class="bg-primary text-center text-white">
+			<article>
+				<h3 class="display-4">HOTLINE: 0211/440 340 00</h3>
+			</article>
+		</section>
+		<!--HotLine End-->
+		
+		
+		<!--Booking Form-->
+		<section>
+		
+		<div class="container-fluid p-3 my-3 bg-dark text-white rounded shadow">
+		  <h1 class="text-center">Book Now</h1>
+		
+		
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10 mx-auto">
+					<form>
+						<div class="">
+							Parking Type
+						</div>
+						<!--Car Park Radio 1-->
+						 <div class="form-check-inline">
+						  <label class="form-check-label" for="Open_Space">
+							<input type="checkbox" class="form-check-input" id="Open_Space" name="Open_Space" value="Open_Space" checked>Open Space
+						  </label>
+						</div>
+						
+						<!--Car Park help toggle-->
+						<div class="form-check-inline pr-5">
+						  <input type="button" data-toggle="tooltip" title="We park you vehicle in a open space.
+						  This is the cheaper option." value="?">
+						</div>
+						<!--Car Park Toggle script-->
+						<script>
+						$(document).ready(function(){
+						  $('[data-toggle="tooltip"]').tooltip();   
+						});
+						</script>
+						<!--Car Park help toggle-->
+						
+						<!--Car Park Radio 1 End -->
+						
+						
+						<!--Car Park Radio 2-->
+						 <div class="form-check-inline pl-5">
+						  <label class="form-check-label" for="Car_Park">
+							<input type="checkbox" class="form-check-input" id="Car_Park" name="Car_Park" value="Car_Park" checked>Car Park
+						  </label>
+						</div>
+						
+						<!--Car Park 2 help toggle-->
+						<div class="form-check-inline">
+						  <input type="button" data-toggle="tooltip" title="We park you vehicle safely in our monitored Garages" value="?">
+						</div>
+						<!--Car Park 2 Toggle script-->
+						<script>
+						$(document).ready(function(){
+						  $('[data-toggle="tooltip"]').tooltip();   
+						});
+						</script>
+						<!--Car Park 2 help toggle-->
+						
+						<!--Car Park 2 Radio END -->
+						
+						<!--Begining Date and Time-->
+						
+						<div class="form-group row pt-3">
+							<div class="col-sm-6">
+								<label for="Begin_Date">Begin Date</label>
+								<input type="date" class="form-control" id="Begin_Date" name="Begin_Date">
+							</div>
+							<div class="col-sm-6">
+								<label for="Begin_Time">Begin Time</label>
+								<input type="time" class="form-control" id="Begin_Time" name="Begin_Time">
+							</div>
+						</div>
+						
+						
+						<!--Begining Date and Time END-->
+						
+						
+						
+						<!--End Date and Time-->
+						
+						<div class="form-group row">
+							<div class="col-sm-6">
+								<label for="End_Date">End Date</label>
+								<input type="date" class="form-control" id="End_Date" name="End_Date">
+							</div>
+							<div class="col-sm-6">
+								<label for="End_Time">End Time</label>
+								<input type="time" class="form-control" id="End_Time" name="End_Time">
+							</div>
+						</div>
+						
+						
+						<!--End Date and Time END-->
+						
+						<div class="pt-3">
+						Mode of transport
+						</div>
+						
+						
+						<!--Service Radio 1-->
+						 <div class="form-check-inline">
+						  <label class="form-check-label" for="Shuttle_Service">
+							<input type="checkbox" class="form-check-input" id="Shuttle_Service" name="Shuttle_Service" value="Shuttle_Service" checked>Shuttle Service
+						  </label>
+						</div>
+						
+						<!--Service help toggle-->
+						<div class="form-check-inline pr-5">
+						  <input type="button" data-toggle="tooltip" title="Our Inhouse, air-conditioned shuttle service will take you from our parking garage
+						  directly to the airport terminal. And within a maximum of 2 minutes (800m).
+						  
+						  Bring your vehicle at the start time of your booking to the parkenflughafendus.de 
+						  parking garage at Kieshecker Weg 120 in 40468 Dusseldorf." value="?">
+						</div>
+						<!--Service Toggle script-->
+						<script>
+						$(document).ready(function(){
+						  $('[data-toggle="tooltip"]').tooltip();   
+						});
+						</script>
+						<!--Service help toggle-->
+						
+						<!--Service Radio 1 End -->
+						
+						
+						<!--Service Radio 2-->
+						 <div class="form-check-inline pl-5">
+						  <label class="form-check-label" for="Vallet_Service">
+							<input type="checkbox" class="form-check-input" id="Vallet_Service" name="Vallet_Service" value="Vallet_Service" checked>Vallet Service
+						  </label>
+						</div>
+						
+						<!--Service 2 help toggle-->
+						<div class="form-check-inline pb-3">
+						  <input type="button" data-toggle="tooltip" title="We park you vehicle safely in our monitored Garages" value="?">
+						</div>
+						<!--Service 2 Toggle script-->
+						<script>
+						$(document).ready(function(){
+						  $('[data-toggle="tooltip"]').tooltip();   
+						});
+						</script>
+						<!--Service 2 help toggle-->
+						
+						<!--Service 2 Radio END -->
+						
+						
+						
+						<!--Card Radio Buttons-->
+						
+						<div class="container bg-dark pt-3 pb-5 text-light">
+  
+						  <h1>Select Package</h1>
+						  
+						  <div class="row">
+							
+							  <div class="col-md-3 col-lg-3 col-sm-3 border">
+								
+								<label>
+								  <input type="radio" name="Package1" class="card-input-element" />
+
+									<!--Card Radio Package 1-->
+									
+									<div class="panel panel-default card-input">
+									  <div class="panel-heading">Package 1</div>
+									  <div class="panel-body border-top">
+										Package item 1<br>
+										Package item 2<br>
+										Package item 3<br>
+										Package item 4<br>
+										Package item 5<br>
+										Package item 6<br>
+										Package item 7<br>
+										Package item 8<br>
+										Package item 9<br>
+										Package item 10<br>
+										
+										<p class="text-center pt-2">Package Value</p>
+										<p class="bg-danger text-center text-white pt-2">00.00 Euro </p>
+									  </div>
+									</div>
+
+								</label>
+								
+							  </div>
+							  
+							  
+							  <!--Card Radio Package 2-->
+							  <div class="col-md-3 col-lg-3 col-sm-3 border">
+								
+								<label>
+								  <input type="radio" name="Package2" class="card-input-element" />
+
+									<div class="panel panel-default card-input">
+									  <div class="panel-heading">Package 2</div>
+									  <div class="panel-body border-top">
+										Package item 1<br>
+										Package item 2<br>
+										Package item 3<br>
+										Package item 4<br>
+										Package item 5<br>
+										Package item 6<br>
+										Package item 7<br>
+										Package item 8<br>
+										Package item 9<br>
+										Package item 10<br>
+										Package item 11<br>
+										Package item 12<br>
+										Package item 13<br>
+										Package item 14<br>
+										Package item 15<br>
+										
+										<p class="text-center pt-2">Package Value</p>
+										<p class="bg-danger text-center text-white pt-2">00.00 Euro </p>
+									  </div>
+									</div>
+								</label>
+								
+							  </div>
+							  
+							  
+							  <!--Card Radio Package 3-->
+							  
+							  <div class="col-md-3 col-lg-3 col-sm-3 border">
+								
+								<label>
+								  <input type="radio" name="Package3" class="card-input-element" />
+
+									<div class="panel panel-default card-input">
+									  <div class="panel-heading">Package 3</div>
+									  <div class="panel-body border-top">
+										Package item 1<br>
+										Package item 2<br>
+										Package item 3<br>
+										Package item 4<br>
+										Package item 5<br>
+										Package item 6<br>
+										Package item 7<br>
+										Package item 8<br>
+										Package item 9<br>
+										Package item 10<br>
+										Package item 11<br>
+										Package item 12<br>
+										
+										<p class="text-center pt-2">Package Value</p>
+										<p class="bg-danger text-center text-white pt-2">00.00 Euro </p>
+									  </div>
+									</div>
+								</label>
+								
+							  </div>
+							  
+							  <!--Card Radio Package 4-->
+							  
+							  <div class="col-md-3 col-lg-3 col-sm-3 border">
+								
+								<label>
+								  <input type="radio" name="Package4" class="card-input-element" />
+
+									<div class="panel panel-default card-input">
+									  <div class="panel-heading">Package 4</div>
+									  <div class="panel-body border-top">
+										Package item 1<br>
+										Package item 2<br>
+										Package item 3<br>
+										Package item 4<br>
+										Package item 5<br>
+										Package item 6<br>
+										Package item 7<br>
+										Package item 8<br>
+										Package item 9<br>
+										Package item 10<br>
+										
+										<p class="text-center pt-2">Package Value</p>
+										<p class="bg-danger text-center text-white pt-2">00.00 Euro </p>
+									  </div>
+									</div>
+								</label>
+								
+							  </div>
+							  
+						  </div>
+						  
+						</div>
+												
+												
+						
+						<!--Card Radio Buttons End-->
+						
+						
+						
+						
+						<!--User info Form-->
+						<div class="col-sm-3 form-group row">
+								<label for="inputPostalCode">Salutation</label>
+								<Select class="form-control" id="Salutation" name="Salutation">
+								<option value="Sir">Sir</option>
+								<option value="Madam">Madam</option>
+								</select>
+							</div>
+						<div class="form-group row">
+							<div class="col-sm-6">
+								<label for="inputFirstname">First name</label>
+								<input type="text" class="form-control" id="inputFirstname" name="inputFirstname" placeholder="First name">
+							</div>
+							<div class="col-sm-6">
+								<label for="inputLastname">Last name</label>
+								<input type="text" class="form-control" id="inputLastname" name="inputLastname" placeholder="Last name">
+							</div>
+						</div>
+						<div class="form-group row">
+							<div class="col-sm-6">
+								<label for="inputCompany">Company</label>
+								<input type="text" class="form-control" id="inputCompany" name="inputCompany" placeholder="Company Name">
+							</div>
+							<div class="col-sm-6">
+								<label for="inputEmail">E-mail</label>
+								<input type="email" class="form-control" id="inputEmail" name="inputEmail" placeholder="E-Mail">
+							</div>
+						</div>
+						<div class="form-group row">
+							<div class="col-sm-6">
+								<label for="inputMobilenumber">Mobile Number</label>
+								<input type="text" class="form-control" id="inputMobilenumber" name="inputMobilenumber" placeholder="Mobile Number">
+							</div>
+							<div class="col-sm-3">
+								<label for="inputLiecenseplate">License Plate</label>
+								<input type="text" class="form-control" id="id="inputLiecenseplate" name="inputLiecenseplate" placeholder="License Plate">
+							</div>
+							<div class="col-sm-3">
+								<label for="inputCarcolour">Car Colour</label>
+								<input type="text" class="form-control" id="inputCarcolour" name="inputCarcolour" placeholder="Car Colour">
+							</div>
+						</div>
+						<div class="form-group row">
+							<div class="col-sm-6">
+								<label for="inputCarbrand">Car Brand</label>
+								<input type="text" class="form-control" id="inputCarbrand" name="inputCarbrand" placeholder="Car Brand">
+							</div>
+							<div class="col-sm-6">
+								<label for="inputCarmodal">Car Type/ Model</label>
+								<input type="text" class="form-control" id="inputCarmodal" name="inputCarmodal" placeholder="First name">
+							</div>
+						</div>
+						<div class="form-group row">
+							<div class="col-sm-6">
+								<label for="inputDepartureterminal">Departure Terminal</label>
+								<input type="text" class="form-control" id="inputDepartureterminal" name="inputDepartureterminal" placeholder="Departure Terminal">
+							</div>
+							<div class="col-sm-6">
+								<label for="inputFlightnumber">Flight Number (Return)</label>
+								<input type="text" class="form-control" id="inputFlightnumber" name="inputFlightnumber" placeholder="Flight Number (Return)">
+							</div>
+						</div>
+						<div class="form-group row">
+							<div class="col-sm-6">
+								<label for="inputPartnerid">Partner ID (only for partners)</label>
+								<input type="text" class="form-control" id="inputPartnerid" name="inputPartnerid" placeholder="Partner ID">
+							</div>
+							<div class="col-sm-6">
+								<label for="inputAnnotation">Annotation</label>
+								<input type="textarea" class="form-control" id="inputAnnotation" name="inputAnnotation" placeholder="Annotation">
+							</div>
+						</div>
+						
+						<!--Agreement Terms-->
+						<div class="form-group row">
+						<div class="col-sm-6">
+						 
+						  <label class="form-check-label" for="Agreement_Term">
+							<input type="checkbox" class="form-control" id="Agreement_Term" name="Agreement_Term" value="Agreement_Term" checked>I hereby confirm that I have read and accepted the terms and conditions.
+						  </label>
+						</div>
+						<!--Data Accuracy-->
+						<div class="col-sm-6">
+						 
+						  <label class="form-check-label" for="Data_Accuracy">
+							<input type="checkbox" class="form-control" id="Data_Accuracy" name="Data_Accuracy" value="Data_Accuracy" checked>I hereby agree that my data entered into the contact form will be stored electronically and processed and used for the purpose of establishing contact.I know that I can revoke my consent at any time.Further information on data protection can be found in the privacy policy.I hereby confirm that I have read and accepted the privacy policy ..
+						  </label>
+						
+						</div>
+						
+						</div>
+						<button type="button" class="container btn btn-primary px-4">Book Now</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		</div>
+		</section>
+		
+		<!--Booking Form End-->
+		
+		<!--Info-->
+		<section>
+			<article>
+			<div class="container-fluid text-center pt-3 pb-3">
+				<h2>Info</h2>
+			</div>
+				<h4 class="text-center">Parking and car service at Dusseldorf Airport</h4>
+					<p class="container">Start your vacation stress-free and without the hassle of searching for parking spaces at the airport After making your online reservation, you have the option of parking your vehicle directly at our parking garage and using our free shuttle service. Alternatively, 
+					we offer our customers the convenient vehicle transfer at departure and on arrival directly at the terminal at no extra cost.Running In the right lane area in front of terminals A, B and C there are parking areas for loading and unloading the vehicles. On these parking areas you stop with your vehicle. 
+					The entrances to the airport are marked on the glass doors with a white number. This and your name you call one of our employees by phone. Within a few minutes, one of our service staff will pick up the vehicle at the terminal. 
+					Furthermore, you have the opportunity to take our professional vehicle care or other special services. After your landing at Düsseldorf Airport, 
+					call our hotline so that we can pick you up at the terminal within a few minutes or hand over your vehicle to you at the terminal.Payment Payment: You can pay by credit card or cash at vehicle delivery. Please note that only one cash payment can be accepted at the terminal when using the Valet service! 
+					images You can hand over your vehicle to you at the terminal.Payment Payment: You can pay by credit card or cash at vehicle delivery. Please note that only one cash payment can be accepted at the terminal when using the Valet service! images You can hand over your vehicle to you at the terminal. Payment Payment: 
+					You can pay by credit card or cash at vehicle delivery. 
+					Please note that only one cash payment can be accepted at the terminal when using the Valet service! images.</p>
+			</article>
+		</section>
+		
+		<!--Info End-->
+		
+			
+		<!--Attention Message-->
+		
+		<section>
+			<div class="container-fluid">
+			  <h2 class="text-center pt-5">Information</h2>
+			  <div class="card-deck pt-5 pb-3">
+				<div class="card bg-light">
+				  <div class="card-body text-center">
+					<p class="card-text"><h4>Secure and cheap parking at Düsseldorf Airport</h4></p>
+					<p class="card-text">The journey by plane is usually a complex undertaking. Whether it's going on vacation or on a business trip, everything has to be well organized. An important aspect with regard to the planning of such a trip, is the safe accommodation of the vehicle at the Dusseldorf airport. Not always you can find known, have the time and take the driving to the Dusseldorf airport. This is not necessary, as you can park with us at the best conditions in the safest parking garage at Düsseldorf Airport. Our parking garage meets the highest possible safety standards and thus you can be sure that your vehicle is in the best hands. In addition, we always strive to ensure a smooth and uncomplicated processing to make your journey as comfortable as possible.</p>
+				  </div>
+				</div>
+				<div class="card bg-light">
+				  <div class="card-body text-center">
+					<p class="card-text"><h4>Parking in three easy steps to secure and affordable service</h4></p>
+					<p class="card-text">If you want to leave your car safely at Dusseldorf Airport during your absence, you can make your individual reservation at ParkenFlughafenDUS.de in only three steps. In the first step, determine your desired type of parking space, the duration of parking and the mode of transport. In the second step, you can optionally select a maintenance package. By entering your personal data in the third step, you can book your individually compiled parking service at Düsseldorf Airport. Within a few moments, you will receive a booking confirmation by e-mail.</p>
+				  </div>
+				</div>
+				<div class="card bg-light">
+				  <div class="card-body text-center">
+				  <p class="card-text"><h4>The all-round service of ParkenFlughafenDUS.de</h4></p>
+					<p class="card-text">Our company offers an all-round service if you want to park your car at the Dusseldorf airport. On request, our in-house and air-conditioned shuttle service will take you from our parking garage to the airport terminal. Alternatively, our service staff will gladly pick up your vehicle directly from the airport terminal and drive it safely into our parking garage. In addition, we offer a wide range of care services around the car. From paint care to polish, engine wash and paint jobs of all kinds, you can book valet parking services. Safety is always our top priority. Since our parking garage is alarm-protected and monitored 24 hours a day, you do not need to worry about your car. We keep your car key separately in a safe, so that high safety standards are guaranteed. If you have further questions to our service offer or the parking at the Duesseldorf airport, you are welcome to contact us. We look forward to your call!</p>
+				  </div>
+				</div>
+				</div>  
+			  </div>
+			</div>
+			
+		</section>
+			
+		<!--Attention Message End-->
+		
+		<!--Services We Provide-->
+		<section>
+			<div class="container-fluid">
+			  <h2 class="text-center pt-5">Services we provide</h2>
+			  <div class="card-deck pt-5 pb-3">
+				<div class="card bg-light">
+				  <div class="card-body">
+					<p class="card-text"><h4>Basic Services</h4></p>
+					<p class="card-text">
+					<ul>
+						<li>Free safe</li>
+						<li>Free drinks</li>
+						<li>Free jump start</li>
+						<li>WC</li>
+						<li>Payment by debit / credit card</li>
+						<li>Workshop service</li>
+						<li>car care</li>
+						<li>tank service</li>
+						<li>24h transfer</li>
+						<li>Valet parking</li>
+						<li>Transfer without night supplement</li>
+						<li>Air-conditioned shuttle bus</li>
+						<li>Free child seat</li>
+						</ul>
+					</p>
+				  </div>
+				</div>
+				<div class="card bg-light">
+				  <div class="card-body">
+					<p class="card-text"><h4>Service - Security</h4></p>
+					<p class="card-text">
+					We are the only parking garage operators operating a closed, alarm-protected and 24-hour guarded parking garage at Düsseldorf Airport. Thus, you can rule out that you will find a cheaper parking garage in this class for your vehicle.
+					<ul>
+						<li>The insurance coverage applies to all transfers from the terminal to our parking garage and to all parked vehicles in our parking garage.</li>
+						<li>In order to avoid vehicle damage, such as door bumpers, etc., vehicles are parked exclusively by our staff.</li>
+						<li>The car keys are stored in a vault for security reasons.</li>
+						<li>video surveillance</li>
+					</ul>
+					We also offer:
+					<ul>
+						<li>Hall parking</li>
+						<li>Single garages (closed)</li>
+					</ul>
+					</p>
+				  </div>
+				</div>
+				<div class="card bg-light">
+				  <div class="card-body">
+				  <p class="card-text"><h4>Service - Vehicle Care</h4></p>
+					<p class="card-text">Directly in the parking garage you will find our vehicle care.</p>
+					<p class="card-text">Our range of care services for your vehicle:</p>
+					<p class="card-text">
+					<ul>
+						<li>Lackpflege</li>
+						<li>polish</li>
+						<li>Wax sealing and nano-sealing</li>
+						<li>interior cleaning</li>
+						<li>Odor removal with ozone treatment in the vehicle</li>
+						<li>Pet hair removal</li>
+						<li>Cloth, leather, plastic and carpet cleaning</li>
+						<li>Fabric and leather repairs and renewals</li>
+						<li>engine cleansing</li>
+						<li>Dents removal without painting</li>
+						<li>Rim repair</li>
+						<li>Painting work of all kinds</li>
+						<li>Accident and hail damage elimination</li>
+						<li>Car glass immediate installation</li>
+						<li>Fleet support For companies</li>
+					</ul>
+					</p>
+				  </div>
+				</div>
+				</div>  
+			  </div>
+			</div>
+		
+		
+		</section>
+		<!--Services we provide End-->
+
+		<!--Socail Media Icons-->
+		<Section>
+		<div class="container-fluid bg-primary text-white text-center pt-3 pb-3">
+			<article>
+				Social Media Links
+			</article>
+			
+			
+			
+			
+			
+			
+		</div>	
+		</section>
+		<!--Socail Media Icons End-->
+		
+		<!--Footer-->
+			<section class="text-center bg-dark text-white">
+				<p> @Copyright to Parkenflughafendus.de </p>
+			</section>
+		<!--Footer End-->	
+			
+			
+			<!--All Java Scripts-->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+			<!--All Java Scripts End-->
+			
+	</body>
+</html>
